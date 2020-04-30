@@ -48,7 +48,7 @@ public class ContactListFragment extends ListFragment {
     public void onListItemClick(@NonNull ListView l, @NonNull View v, int position, long id) {
         ContactDetailsFragment detailsFragment = ContactDetailsFragment.newInstance((int) id);
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.add(R.id.fragment_list, detailsFragment).addToBackStack(null);
+        ft.replace(R.id.fragment_list, detailsFragment).addToBackStack(null);
         ft.commit();
     }
 }

@@ -13,9 +13,11 @@
 
         <View
             android:id="@+id/view"
-            android:layout_width="386dp"
+            android:layout_width="match_parent"
             android:layout_height="144dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="24dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/shape_rect"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +25,9 @@
 
         <View
             android:id="@+id/view2"
-            android:layout_width="386dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/shape_rect"
@@ -33,7 +37,9 @@
 
         <View
             android:id="@+id/view3"
-            android:layout_width="386dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/shape_rect"
@@ -41,21 +47,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="38dp"
-            android:layout_height="28dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/button"
-            android:text="+"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
 
         <View
             android:id="@+id/view4"
-            android:layout_width="386dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="56dp"
             android:background="@drawable/shape_rect"
@@ -65,7 +63,9 @@
 
         <View
             android:id="@+id/view5"
-            android:layout_width="386dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/shape_rect"
@@ -73,21 +73,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view4" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="38dp"
-            android:layout_height="28dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/button"
-            android:text="+"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
 
         <View
             android:id="@+id/view6"
-            android:layout_width="386dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
             android:layout_height="138dp"
             android:layout_marginTop="52dp"
             android:background="@drawable/shape_rect"
@@ -108,67 +100,85 @@
 
         <TextView
             android:id="@+id/contactDetailsName"
-            android:layout_width="216dp"
+            android:layout_width="wrap_content"
             android:layout_height="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/contact_name"
-            android:textSize="36sp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="@+id/view"
             app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/view" />
 
         <TextView
             android:id="@+id/contactDetailsPhoneNumber"
-            android:layout_width="340dp"
+            android:layout_width="wrap_content"
             android:layout_height="33dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/phone_number"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/view2"
             app:layout_constraintTop_toTopOf="@+id/view2" />
 
         <TextView
             android:id="@+id/contactDetailsPhoneNumber2"
-            android:layout_width="340dp"
+            android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/phone_number_2"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/view3"
             app:layout_constraintEnd_toEndOf="@+id/view3"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/view3"
             app:layout_constraintTop_toTopOf="@+id/view3" />
 
         <TextView
             android:id="@+id/ContactDetailsEmail1"
-            android:layout_width="340dp"
+            android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/e_mail"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/view4"
             app:layout_constraintEnd_toEndOf="@+id/view4"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/view4"
             app:layout_constraintTop_toTopOf="@+id/view4" />
 
         <TextView
             android:id="@+id/ContactDetailsEmail2"
-            android:layout_width="340dp"
+            android:layout_width="wrap_content"
             android:layout_height="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/e_mail_2"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/view5"
             app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/view5"
             app:layout_constraintTop_toTopOf="@+id/view5" />
 
         <TextView
             android:id="@+id/ContactDetailsDescription"
-            android:layout_width="340dp"
+            android:layout_width="wrap_content"
             android:layout_height="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/description"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/view6"
             app:layout_constraintEnd_toEndOf="@+id/view6"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/view6"
             app:layout_constraintTop_toTopOf="@+id/view6" />
     </androidx.constraintlayout.widget.ConstraintLayout>
