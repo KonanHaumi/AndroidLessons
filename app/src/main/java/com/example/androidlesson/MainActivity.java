@@ -29,7 +29,10 @@ public class MainActivity extends AppCompatActivity implements ServiceProvider {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unbindService(mConnection);
+        if (mBound) {
+            unbindService(mConnection);
+            mBound = false;
+        }
     }
 
     private ServiceConnection mConnection = new ServiceConnection() {
